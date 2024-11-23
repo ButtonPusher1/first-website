@@ -1,0 +1,118 @@
+#instrctionsContainer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+
+}
+body{
+    background-color: #faf8ef;
+    /* set the background to a nice colour */
+}
+#scores{
+    display: flex;
+    flex-direction: row;
+    
+    /* display the divs in a row but format the stuff inside them normal */
+}
+#highScoreDiv{
+    /* center the text and add padding so its not bunched up */
+    text-align: center;
+    padding: 5px;
+}
+#scoreDiv{
+    /* center the text and add padding so its not bunched up */
+    text-align: center;
+    padding: 5px;
+}
+#gameContainer{
+    /* Display the divs in a colum respecting their own css and center them */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mainContainer{
+    width: 60vh;
+    height: 60vh;
+    
+    position: relative;
+    background-color: burlywood;
+    border: 1vh rgb(92, 64, 51) solid;
+    /* z-index: 3; */
+}
+.box{
+    font-size: 5vh;
+    border: 3px solid black; /* This will create a border that is 2% of the width of the containing block */
+    position: absolute;
+    width: 22%;
+    height: 22%;
+    text-align: center;
+    
+}
+
+/* #gameOverScreen{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;%
+    width: 99vw;
+    background-color: lightcoral;
+    opacity: 1;
+    position: absolute;
+    font-size: 10vh;
+    z-index: 2;
+    
+}
+#restartGame{
+    font-size: 10vh;
+} */
+
+#gameOverDisplay{
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+}
+/* Styles for the overlay */
+#gameOverScreen{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5); /* Red color with 50% opacity */
+    z-index: 1; /* Lower z-index */
+  }
+  
+  /* Styles for the content that should stay above the overlay */
+#gameOverElements{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Higher z-index */
+    text-align: center; /* Center text horizontally */
+    color: white; /* Example: Text color */
+  }
+#winScreen{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lower z-index */
+  }
+button{
+    font-size: xx-large;
+}
+  /* Styles for the content that should stay above the overlay */
+#winScreenElements{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Higher z-index */
+    text-align: center; /* Center text horizontally */
+    color: white; /* Example: Text color */
+  }
+  

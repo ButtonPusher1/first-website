@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <label id="GameOverText">GAME OVER</label> -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div id="gameOverScreen">
+        <div id="gameOverElements">
+          <!-- Elements that should stay above the overlay -->
+          <h1>GAME OVER</h1>
+          <button onclick="newGameReal()">New Game</button>
+          <p>Score:</p>
+          <p id="scoreGameOverDisplay">0</p>
+          <p>Highscore:</p>
+          <p id="highScoreGameOverDisplay">0</p>
+        </div>
+    </div>
+    <div id="winScreen">
+        <div id="winScreenElements">
+          <!-- Elements that should stay above the overlay -->
+          <h1>YOU WIN!</h1>
+          <button onclick="continueGame()">Continue</button>
+          <button onclick="gameOver()">Finish</button>
+
+        </div>
+    </div>
+    <div id="instrctionsContainer">
+        <h1 class="title">2048</h1>
+        <p>Join the tiles to reach 2048!</p>
+    </div>
+    <div id="gameContainer">
+        <button onclick="newGameReal()">New Game</button>
+        <div id="scores">
+            <div id="highScoreDiv">
+                <h1 id="highScoreLabel">High Score:</h1>
+                <h1 id="highScoreDisplay">0</p>
+            </div>
+            <div id="scoreDiv">
+                <h1 id="scoreLabel">Score:</h1>
+                <h1 id="scoreDisplay">0</h1>
+            </div>
+        </div>
+        <div id="mainContainer">
+            
+        </div>
+        
+    </div>
+    
+    <script src="attempt4.js"></script>
+
+</body>
+</html>
+
+
