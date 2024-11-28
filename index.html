@@ -29,18 +29,25 @@
     </div>
     <div id="instrctionsContainer">
         <h1 class="title">2048</h1>
-        <p>Join the tiles to reach 2048!</p>
     </div>
+    <div id="moveButtonContainer">
+        <button class="arrow" id="topArrow" onclick="moveUp()">↑</button><br>
+        <button class="arrow" id="leftArrow" onclick="moveLeft()">←</button>
+        <button class="arrow" id= "rightArrow" onclick="moveRight()">→</button>
+        <button class="arrow" id= "bottomArrow" onclick="moveDown()">↓</button></div>
+    
+    
+
     <div id="gameContainer">
         <button onclick="newGameReal()">New Game</button>
         <div id="scores">
             <div id="highScoreDiv">
-                <h1 id="highScoreLabel">High Score:</h1>
-                <h1 id="highScoreDisplay">0</p>
+                <p id="highScoreLabel">High Score:</p>
+                <p id="highScoreDisplay">0</p>
             </div>
             <div id="scoreDiv">
-                <h1 id="scoreLabel">Score:</h1>
-                <h1 id="scoreDisplay">0</h1>
+                <p id="scoreLabel">Score:</p>
+                <p id="scoreDisplay">0</p>
             </div>
         </div>
         <div id="mainContainer">
