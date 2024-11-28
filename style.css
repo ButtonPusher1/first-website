@@ -16,12 +16,11 @@ body{
 #highScoreDiv{
     /* center the text and add padding so its not bunched up */
     text-align: center;
-    padding: 5px;
 }
 #scoreDiv{
     /* center the text and add padding so its not bunched up */
     text-align: center;
-    padding: 5px;
+    padding: 1px;
 }
 #gameContainer{
     /* Display the divs in a colum respecting their own css and center them */
@@ -29,9 +28,31 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+#moveButtonContainer{
+    width:  15%;
+    height: 15%;
+    left: 42.5%;
+    position: relative;
+    background-color: burlywood;
+    border: 1vh rgb(92, 64, 51) solid;
+    text-align: center; /* Horizontally centers the content */
+
+    position: relative; /* Ensure the arrows remain centered */
+    /* z-index: 3; */
+}
+.arrow{
+    width: 45%;
+    height: 30%;
+    font-size:100%;
+}
+
+
+
+
 #mainContainer{
-    width: 60vh;
-    height: 60vh;
+    width: 50vh;
+    height: 50vh;
     
     position: relative;
     background-color: burlywood;
@@ -103,7 +124,8 @@ body{
     z-index: 1; /* Lower z-index */
   }
 button{
-    font-size: xx-large;
+    font-size: medium;
+
 }
   /* Styles for the content that should stay above the overlay */
 #winScreenElements{
