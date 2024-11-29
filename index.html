@@ -11,7 +11,7 @@
         <div id="gameOverElements">
           <!-- Elements that should stay above the overlay -->
           <h1>GAME OVER</h1>
-          <button onclick="newGameReal()">New Game</button>
+ 
           <p>Score:</p>
           <p id="scoreGameOverDisplay">0</p>
           <p>Highscore:</p>
@@ -29,17 +29,13 @@
     </div>
     <div id="instrctionsContainer">
         <h1 class="title">2048</h1>
+        <input type="checkbox" id="moveButtonCheckBox" onchange="checkboxChanged(this)">
     </div>
-    <div id="moveButtonContainer">
-        <button class="arrow" id="topArrow" onclick="moveUp()">↑</button><br>
-        <button class="arrow" id="leftArrow" onclick="moveLeft()">←</button>
-        <button class="arrow" id= "rightArrow" onclick="moveRight()">→</button>
-        <button class="arrow" id= "bottomArrow" onclick="moveDown()">↓</button></div>
+    
     
     
 
     <div id="gameContainer">
-        <button onclick="newGameReal()">New Game</button>
         <div id="scores">
             <div id="highScoreDiv">
                 <p id="highScoreLabel">High Score:</p>
@@ -50,11 +46,19 @@
                 <p id="scoreDisplay">0</p>
             </div>
         </div>
+        <button onclick="newGameReal()">New Game</button>
+
+        
         <div id="mainContainer">
             
         </div>
-        
     </div>
+
+    <div id="moveButtonContainer">
+        <button class="arrow" id="topArrow" onclick="moveUp()">↑</button><br>
+        <button class="arrow" id="leftArrow" onclick="moveLeft()">←</button>
+        <button class="arrow" id= "rightArrow" onclick="moveRight()">→</button>
+        <button class="arrow" id= "bottomArrow" onclick="moveDown()">↓</button></div>
     
     <script src="attempt4.js"></script>
 
