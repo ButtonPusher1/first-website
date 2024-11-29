@@ -443,6 +443,14 @@ function moveLeft(){
 
 
 }
+
+function checkboxChanged(checkbox) {
+    if (checkbox.checked) {
+        document.getElementById("moveButtonContainer").style.display = "table"
+    } else {
+        document.getElementById("moveButtonContainer").style.display = "none"
+    }
+}
 function moveRight(){
     let occupiedPositions = getUnocuppiedPositionsReverse()
     let willAnythingHappen = checkCanAnythingMove(occupiedPositions, "right")
