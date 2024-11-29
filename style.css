@@ -10,6 +10,7 @@ body{
 #scores{
     display: flex;
     flex-direction: row;
+
     
     /* display the divs in a row but format the stuff inside them normal */
 }
@@ -20,7 +21,6 @@ body{
 #scoreDiv{
     /* center the text and add padding so its not bunched up */
     text-align: center;
-    padding: 1px;
 }
 #gameContainer{
     /* Display the divs in a colum respecting their own css and center them */
@@ -39,6 +39,7 @@ body{
     text-align: center; /* Horizontally centers the content */
 
     position: relative; /* Ensure the arrows remain centered */
+    display: none;
     /* z-index: 3; */
 }
 .arrow{
@@ -127,6 +128,7 @@ button{
     font-size: medium;
 
 }
+
   /* Styles for the content that should stay above the overlay */
 #winScreenElements{
     position: absolute;
